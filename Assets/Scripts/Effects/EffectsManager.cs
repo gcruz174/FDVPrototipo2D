@@ -9,11 +9,13 @@ namespace Effects
         {
             Jump,
             Land,
+            Explode,
             CoinCollect
         }
 
         [SerializeField] private PoolObject jumpEffect;
         [SerializeField] private PoolObject landEffect;
+        [SerializeField] private PoolObject explodeEffect;
         [SerializeField] private PoolObject coinCollectEffect;
 
         public static EffectsManager Instance;
@@ -36,6 +38,9 @@ namespace Effects
                 case Effect.Land:
                     SpawnEffect(landEffect, position);
                     break;
+                case Effect.Explode:
+                    SpawnEffect(explodeEffect, position);
+                    break; 
                 case Effect.CoinCollect:
                     SpawnEffect(coinCollectEffect, position);
                     break;
