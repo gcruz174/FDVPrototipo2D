@@ -94,6 +94,16 @@ Se ha diseñado la interfaz y las pantallas para que sean lo más modular posibl
 
 ## Animaciones
 
+Gran parte de objetos en la escena utilizan animaciones, como la palanca, los enemigos, las monedas y la bandera, pero se detallará el Animation Controller del jugador puesto que es el más complejo de todos.
+
+![playerbaselayer](ReadmeImages/playerbaselayer.png)
+
+La capa base (Base Layer) del animador contiene los 3 estados principales de movimiento: Idle (quieto), Walk (caminar) y Jump (saltar). Las transiciones se realizan con dos booleanos: Moving, que determina si el jugador se está moviendo, y Grounded, que determina si está en el suelo o en el aire.
+
+![playerdamagelayer](ReadmeImages/playerdamagelayer.png)
+
+La capa de Damage controla la animación de recibir daño. Cuando se dispara el trigger Hurt, pasa al estado Damage hasta que termine la animación, y luego permanece en estado NoDamage hasta que se vuelva a disparar el trigger. El resto de Animation Controllers siguen una estructura mucho más sencilla.
+
 ## Tilemap
 
 ![tilemap](ReadmeImages/tilemap.png)
@@ -110,3 +120,6 @@ Para gestionar las colisiones y la decoración de la escena, se ha dividido en l
 
 ## Eventos de juego
 
+Cuando el jugador recolecta todas las monedas del nivel, la bandera aparecerá y podrá completar el juego. La clase Coin tiene un contador interno estático que almacena la cantidad de monedas activas en la escena. Al destruirse una moneda, este contador decrementará. La bandera está suscrita al evento de recolección de moneda y comprueba que el contador sea igual a cero, y si lo es, se activa.
+
+Scripts: [EndFlag.cs](Assets/Scripts/LevelEntities/EndFlag.cs)
