@@ -2,6 +2,8 @@
 # Fundamentos del Desarrollo de Videojuegos
 # Ginés Cruz Chávez
 
+[Enlace al vídeo explicativo (inglés)](https://youtu.be/q4XpGcJzal8)
+
 ## El juego
 
 ![game](ReadmeImages/game.png)
@@ -68,7 +70,7 @@ Se han ajustado los tiempos de transiciones entre cámaras para que sean más r�
 
 ![sounds](ReadmeImages/sounds.png)
 
-El juego incorpora sonidos para saltar, usar el resorte, tocar el suelo, recolectar monedas, recibir daño, matar un enemigo, accionar una palanca y morir. Todos estos sonidos se reproducen con AudioSources configuradas para 2D, y se han elaborado utilizando la herramienta grauita [jsfxr](https://sfxr.me/). Los .wav utilizados en este proyecto se pueden encontrar en el directorio [Sounds](Assets/Sounds/).
+El juego incorpora sonidos para saltar, usar el resorte, tocar el suelo, recolectar monedas, recibir daño, matar un enemigo, accionar una palanca y morir. Todos estos sonidos se reproducen con AudioSources configuradas para 2D, y se han elaborado utilizando la herramienta gratuita [jsfxr](https://sfxr.me/). Los .wav utilizados en este proyecto se pueden encontrar en el directorio [Sounds](Assets/Sounds/).
 
 ## UI
 
