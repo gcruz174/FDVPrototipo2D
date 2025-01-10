@@ -74,21 +74,21 @@ El juego incorpora sonidos para saltar, usar el resorte, tocar el suelo, recolec
 
 Hay cuatro elementos de UI utilizados en el prototipo:
 
-![coincounter](ReadmeImages/coincounter.png)
-
 1. **Contador de monedas:** Muestra la cantidad de monedas que ha recolectado actualmente el jugador. Se suscribe al evento que disparan las monedas al ser recolectadas y actualiza el contador con una pequeña animación realizada con el plugin [DOTween](https://dotween.demigiant.com/). Si la moneda recogida tiene valor de más de uno, va incrementando gradualmente el contador hasta llegar al valor final.
 
-![livescounter](ReadmeImages/livescounter.png)
+![coincounter](ReadmeImages/coincounter.png)
 
 2. **Vidas:** Muestra las vidas que tiene actualmente el jugador. Se suscribe al evento disparado por el componente PlayerHealth al recibir daño y actualiza la cantidad de corazones mostrados en pantalla.
 
-![gameoverscreen](ReadmeImages/gameoverscreen.png)
+![livescounter](ReadmeImages/livescounter.png)
 
 3. **Pantalla de derrota:** Se hace visible cuando el jugador pierde todas sus vidas. Esta pantalla pausa la partida (poniendo el timeScale a 0) y espera a que el jugador pulse la tecla R para recargar la escena.
 
-![winscreen](ReadmeImages/winscreen.png)
+![gameoverscreen](ReadmeImages/gameoverscreen.png)
 
 4. **Pantalla de victoria:** Se hace visible cuando el jugador entra en contacto con la bandera. Esta pantalla pausa la partida (poniendo el timeScale a 0) y espera a que el jugador pulse la tecla R para recargar la escena.
+
+![winscreen](ReadmeImages/winscreen.png)
 
 Se ha diseñado la interfaz y las pantallas para que sean lo más modular posible, utilizando delegados y eventos.
 
